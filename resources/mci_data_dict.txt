@@ -1,0 +1,108 @@
+Index	Term	Definition	JSON Source	Notes	RAVE Identifier / JSON Field
+0	Sample	Sample ID	All	Anonymized sample identifier	
+1	Birth_Date	"Patient date of birth, in days before study enrollment"	COG	Negative integer	DM_BRTHDAT
+2	Ethnicity	Patient ethnicity	COG	Hispanic/Non-Hispanic/Unknown	DM_ETHNIC
+3	Sex	Patient biological sex	COG		DM_SEX
+4	Country_of_Residence	Patient country of residence	COG		SC_SCORRES_CNTRYRES
+5	Race	Patient racial background	COG		DM_CRACE
+6	Diagnosis_ID	Initial patient diagnosis ID code	COG	Ex. 3.0	ADM_DX_CD_SEQ
+7	Enrolled_Dx	Is the diagnosis ID the diagnosis for which the patient is being enrolled?	COG	Yes/No	PRM_TU_DX_TXT
+8	Date_of_Diagnosis	"Patient date of of diagnosis, in days before enrollment"	COG	Negative integer	DX_DT
+9	Primary_Site_Code	Code for site of primary disease	COG	Ex. C72.0	TOPO_ICDO
+10	Primary_Site_Term	Text describing site of primary disease	COG	"Ex. ""Spinal cord"""	TOPO_TEXT
+11	Initial_Dx_Code	Code for initial diagnosis	COG	Ex. 9836/3	MORPHO_ICDO
+12	Initial_Dx_Term	Text describing initial diagnosis	COG	ex. Precursor B-cell lymphoblastic leukemia Pro-B ALL Common pre	MORPHO_TEXT
+13	Registry_Stage_Code	Code describing stage of in registry	COG	"local, distant, unknown, not answered"	REG_STAGE_CODE_TEXT
+14	Date_of_Death	"Patient date of death, in days since enrollment"	COG		DEATH_DOC_DATE
+15	Dx_Morpho_Code	Diagnosis morphology code	COG	"ex. 9560-0 Neurilemoma, NOS"	PRM_CA_DX_ICD_O_CD
+16	Primary_Dx_Disease_Group	Text label for disease group of primary diagnosis	COG	ex. Central Nervous System	PRIMDXDSCAT
+17	Enrolled_on_Prev_COG_Study	Was patient enrolled on a previous COG study?	COG	Yes/No	PT_OTH_ENROLLM_IND_2
+18	Tumor_Grade	Grade of patient's tumor	COG	Roman numeral I - IV or unknown	TUMOR_GP_ST
+19	Tumor_M_Stage	M-stage of patient's tumor	COG	"ex. M3, or unknown"	CNSTMRMSTG
+20	Cerebrospinal_Fluid_Status	Current presence of somatic disease in patient's CSF	COG	positive/negative/unknown/NA	CSFCYTLGY
+21	Spine_at_diagnosis	Presence in CSF at time of diagnosis	COG	positive/negative/unknown/NA	CNSSPNDXSTATUS
+22	Had_Surgical_Resection	Did patient have a biopsy or surgical resection? What was the extent?	COG	" Text description or Other. If other, text description of extent of resection. Semicolon-separated list from 3 merged fields."	SURGBXRCTPFM;TUM_RES_EXT_TP;OTX_SURG_RESECT_TXT
+23	Residual_Tumor	Size of remaining residual tumor	COG	Centimeters	RESI_MALI_POST_SURG_MEAS
+24	Has_Molecular_Reports	Patient has reports on molecular analyses	COG	Yes/No	MCRPTRCVD
+25	Trial_Enrolled_Using_Results	Patient enrolled on a clinical trial based on molecular results	COG		PTNTENRLSEQELIGTREATASGNIND
+26	Therapy_Matched_By_Sequencing	Patient was matched with a therapy based on molecular results	COG		PTNTMOLSEQVARINDMCHTXTRLENR
+27	Dx_Refined_by_Testing	Patient diagnosis was able to be refined by molecular results	COG		FNLDXMOLANLSUPDOTCM
+28	APEC14B1_Reporting_Period	Was a report filed for the yearly reporting period?	COG	Semicolon-separated list of reporting periods of all follow-up reports	REP_EVAL_PD_TP
+29	FollowUp_Obtained_for_Period	"Was follow-up data obtained for this time point? If yes, start and end time-points"	COG	"Semicolon-separated list of follow-up obtained. If obtained, Yes:Start-End; if No, simply ""No""."	"PT_INF_CU_FU_COL_IND,PT_FU_BEGDT,PT_FU_END_DT"
+30	Vital_status	Patient vital status 	COG	Semicolon-separated list of vital statuses. Alive/Dead.	PT_VST
+31	Frontline_Treatment_Received	"Did patient receive a front-line treatment? If yes, specify."	COG	"Semicolon-separated list of treatments given, concatenated from 8 checkbox fields."	FSTLNTXINIDXADM*
+32	Disease_Status_Evaluated_During_Interval	Was patient's disease evaluated during this reporting interval?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	DZ_EXM_REP_IND_2
+33	Achieved_Complete_Remission	Did the patient achieve a complete remission of disease?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	COMP_RESP_CONF_IND_3
+34	Developed_First_Relapse_or_Progression	Has the patient developed a first relapse or progression that has not been previously reported?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	DZ_REL_PROG_IND3
+35	Dx_New_Primary_or_MDS	Has a new primary cancer or MDS been diagnosed that has not been previously reported? 	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	NEW_CA_DX_IND_3
+36	Patient_Reached_Tenth_Anniv	Did patient reach tenth anniversary of their study enrollment during this follow-up period?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	PT_FU_ANNIV_REACH_IND
+37	Confirmed_Lost_to_FollowUp	Was patient confirmed lost to follow-up since the most recent contact date?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	PT_LOST_FU_IND_2
+38	Plans_To_Continue_Tracking_Outcome	Does patient plan to continue on Tracking Outcome?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	PT_FOL_CON_IND
+39	Withdrew_APEC14B1_Consent	Did patient withdraw consent to all involvement in APEC14B1?	COG	"Semicolon-separated list of Yes/No, from follow-up reports."	PTWDRWCSNTFUENDRPDIND
+40	Procedure_Type	Surgical resection procedure type.	COG	"If other, separated with semicolon."	SURG_RESECT_EXT_TP;SURG_PROC_O_SPEC_TXT
+41	Treated_but_not_Enrolled	"Was patient treated according to, but not enrolled on, a COG therapeutic study?"	COG	Yes/No	TX_RCVD_YES_NO
+42	COG_Anti_Cancer_Treatment	COG anti-cancer therapy administered	COG	"ex. ACNS0334 (Regimen B); if 'Other', semi-colon separated with code and description."	COG_ID_ENUM;COG_ID_OTHER;PRI_TX_RGM_SPEC
+43	Non_COG_Anti_Cancer_Treatment	Non-COG anti-cancer therapy administered	COG	"if 'other', semicolon separated code and description."	NPROT_TX_ADM_IND_3;NPROT_TX_ADM_NM;NPROT_TX_ADM_SPEC
+44	Chemotherapy	Chemotherapy treatments previously received by patient.	COG	" Semicolon-separated list of drug names, collapsed from 51 fields."	AGT_ADM_NM*
+45	Primary_Cause_of_Death	Patient's primary cause of death	COG		PT_DEATH_PRM_RSN
+46	Radiation_Therapy	"Did the patient receive radiation therapy? If so, what type?"	COG	"Semicolon separated, collapsed from 6 fields."	RT_TX_TP_*
+47	Relapse_Status	Relapse/progression status of patient's disease.	COG		PROG_REL_STAT
+48	Relapse_Date	Date of patient's disease progression or relapse.	COG		DZ_RECUR_PROG_DX_DT
+49	Relapse_Site	Site of patient's disease progression or relapse.	COG		MET_REL_PROG_LOC_CATE_A1
+50	CNS_Diagnosis_Category	COG CNS sub-study diagnosis category.	COG		MH_MHCAT_CNSDXCAT
+51	CNS_Integrated_Diagnosis	WHO CNS-5 tumor classification.	COG		MH_MHSCAT_CNSDXINTGRT_*
+52	Disease_Group	Patient disease study grouping	Molecular	"Central Nervous System (CNS), Soft Tissue Sarcoma (STS), or Rare Disease (Rare)"	disease_group
+53	Indication	Reason for inclusion in study (initial diagnosis)	Molecular		indication_for_study
+54	Cellularity	Percent of sample composed of tumor cells	Molecular	0% - 100%	percent_tumor
+55	Necrosis	Percent of sample composed of necrotic tissue	Molecular	0% - 100%	percent_necrosis
+56	TN_Version	Tumor-normal pipeline version number	Tumor-Normal		version
+57	TN_Germline_Result	Germline SNV/indel finding present	Tumor-Normal	"Positive/Negative, determined from presence/absence of variant in TN_Germline_(Path/LikelyPath/VUS)"	final_diagnosis
+58	TN_Somatic_Result	Somatic SNV/indel finding present	Tumor-Normal	"Positive/Negative, determined from presence/absence of variant in TN_Germline_CNV_(Tier1-2/Tier3)"	final_diagnosis
+59	TN_Germline_CNV_Result	Germline CNV/LOH finding present	Tumor-Normal	"Positive/Negative, determined from presence/absence of variant in TN_Somatic_(Tier1/Tier2/Tier3)"	final_diagnosis
+60	TN_Somatic_CNV_Result	Somatic CNV/LOH finding present	Tumor-Normal	"Positive/Negative, determined from presence/Absence of variant in TN_Somatic_CNV_(Tier1-2/Tier3)"	final_diagnosis
+61	TN_Germline_Path	Pathogenic germline SNV/indel findings	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	germline_results:variants
+62	TN_Germline_LikelyPath	Likely pathogenic germline SNV/indel findings	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	germline_results:variants
+63	TN_Germline_VUS	Germline SNV/indel variants of uncertain significance	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	germline_results:variants
+64	TN_Somatic_Tier1	Somatic Tier 1 SNV/indel findings	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	somatic_results:variants
+65	TN_Somatic_Tier2	Somatic Tier 2 SNV/indel findings	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	somatic_results:variants
+66	TN_Somatic_Tier3	Somatic Tier 3 SNV/indel findings	Tumor-Normal	"Semicolon-separated list of variant identifiers, with each identifier being a space-separated list of gene, transcript, nucleotide change, and amino acid change"	somatic_results:variants
+67	TN_Germline_CNV_Tier1-2	Germline Tier 1&2 CNV/LOH findings	Tumor-Normal	"Semicolon-separated list of changes, either formatted as position and change i.e., ""Chr:Start-End (Change)"" or descriptive, i.e. ""Whole Genome Near-Triploidy"""	germline_cnv_results:variants
+68	TN_Germline_CNV_Tier3	Germline Tier 3 and other CNV/LOH findings	Tumor-Normal	"Semicolon-separated list of changes, either formatted as position and change i.e., ""Chr:Start-End (Change)"" or descriptive, i.e. ""Whole Genome Near-Triploidy"""	germline_cnv_results:variants
+69	TN_Germline_CNV_Gene_Loss	Genes which have experienced a germline loss	Tumor-Normal	Semicolon-separated list of gene symbols	
+70	TN_Germline_CNV_Gene_BiallelicLoss	Genes which have experienced a germline biallelic/complete loss	Tumor-Normal	Semicolon-separated list of gene symbols	
+71	TN_Germline_CNV_Gene_Gain	Genes which have experienced a germline gain	Tumor-Normal	Semicolon-separated list of gene symbols	
+72	TN_Germline_CNV_Gene_Amplification	Genes which have experienced a germline amplification	Tumor-Normal	Semicolon-separated list of gene symbols	
+73	TN_Germline_CNV_Gene_LOH	Genes which have experienced a germline copy-neutral loss-of-heterozygosity	Tumor-Normal	Semicolon-separated list of gene symbols	
+74	TN_Germline_CNV_Blurb	Clinician notes on germline CNV events not easily described as individual events	Tumor-Normal		
+75	TN_Somatic_CNV_Tier1-2	Somatic Tier1&2 CNV/LOH findings	Tumor-Normal	"Semicolon-separated list of changes, either formatted as position and change i.e., ""Chr:Start-End (Change)"" or descriptive, i.e. ""Whole Genome Near-Triploidy"""	somatic_cnv_results:variants
+76	TN_Somatic_CNV_Tier3	Somatic Tier3 and other CNV/LOH findings	Tumor-Normal	"Semicolon-separated list of changes, either formatted as position and change i.e., ""Chr:Start-End (Change)"" or descriptive, i.e. ""Whole Genome Near-Triploidy"""	somatic_cnv_results:variants
+77	TN_Somatic_CNV_Gene_Loss	Genes which have experienced asomatic loss	Tumor-Normal	Semicolon-separated list of gene symbols	
+78	TN_Somatic_CNV_Gene_BiallelicLoss	Genes which have experienced a somatic biallelic/complete loss	Tumor-Normal	Semicolon-separated list of gene symbols	
+79	TN_Somatic_CNV_Gene_Gain	Genes which have experienced a somatic gain	Tumor-Normal	Semicolon-separated list of gene symbols	
+80	TN_Somatic_CNV_Gene_Amplification	Genes which have experienced a somatic amplification	Tumor-Normal	Semicolon-separated list of gene symbols	
+81	TN_Somatic_CNV_Gene_LOH	Genes which have experienced a somatic copy-neutral loss-of-heterozygosity	Tumor-Normal	Semicolon-separated list of gene symbols	
+82	TN_Somatic_CNV_Blurb	Clinician notes on somatic CNV events not easily described as individual events	Tumor-Normal		
+83	Methylation_Version	Methylation pipeline version number	Methylation		report_version
+84	Methylation_Classification_Final	Final methylation classification from clinical report	Methylation		final_diagnosis:methylation_class
+85	Methylation_Prediction_Category	Best predicted category from methylation analysis (most specific with score >0.8)	Methylation		final_diagnosis:predicted_classification_classifier_scores
+86	Methylation_Prediction_Level	Most precise methylation prediction level passing a confidence cutoff of >0.8	Methylation	"Methylation prediction level from most general to most specific: Superfamily, family, class, subclass"	final_diagnosis:predicted_classification_classifier_scores
+87	Methylation_Superfamily	Methylation superfamily classification (most general level)	Methylation		final_diagnosis:predicted_classification_classifier_scores
+88	Methylation_Superfamily_Score	Methylation superfamily classification confidence score	Methylation	0 - 1	final_diagnosis:predicted_classification_classifier_scores
+89	Methylation_Family	Methylation family classification	Methylation		final_diagnosis:predicted_classification_classifier_scores
+90	Methylation_Family_Score	Methylation family classification confidence score	Methylation	0 - 1	final_diagnosis:predicted_classification_classifier_scores
+91	Methylation_Class	Methylation class classification	Methylation		final_diagnosis:predicted_classification_classifier_scores
+92	Methylation_Class_Score	Methylation class classification confidence score	Methylation	0 - 1	final_diagnosis:predicted_classification_classifier_scores
+93	Methylation_Subclass	Methylation subclass classification (most precise level)	Methylation		final_diagnosis:predicted_classification_classifier_scores
+94	Methylation_Subclass_Score	Methylation subclass classification confidence score	Methylation	0 - 1	final_diagnosis:predicted_classification_classifier_scores
+95	MGMT_Status	Methylation status	Methylation	Methylated or Unmethylated	final_diagnosis:mgmt_status
+96	Archer_Version	Archer pipeline version	Archer		report_version
+97	Archer_Result_Tier1-2	Archer Tier 1&2 findings present	Archer	Positive/Negative	final_diagnosis
+98	Archer_Result_Tier3	Archer Tier 3 and other findings present	Archer	Positive/Negative	final_diagnosis
+99	Archer_Tier1-2_Fusions	Archer Tier 1&2 gene fusion pairs affected	Archer	Semicolon-separated list of gene symbol pairs joined by ::	variants
+100	Archer_Tier1-2_Intragenic	Archer Tier 1&2 genes affected by internal structural variants (deletions and tandem duplications)	Archer	Semicolon-separated list of gene symbols	variants
+101	Archer_Tier3_Fusions	Archer Tier 3 gene fusion pairs affected	Archer	Semicolon-separated list of gene symbol pairs joined by ::	variants
+102	Archer_Tier3_Intragenic	Archer Tier 3 genes affected by internal structural variants (deletions and tandem duplications)	Archer	Semicolon-separated list of gene symbols	variants
+103	Archer_Blurb_Tier1-2	Summary text explaining Archer Tier 1&2 Fusion variants.	Archer		summary
+104	Archer_Blurb_Tier1-2_Intragenic	Summary text explaining Archer Tier 1&2 Intragenic variants.	Archer		summary
+105	Archer_Blurb_Tier3	Summary text explaining Archer Tier 3 Fusion variants.	Archer		summary
+106	Archer_Blurb_Tier3_Intragenic	Summary text explaining Archer Tier3 Intragenic variants.	Archer		summary

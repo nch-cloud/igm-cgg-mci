@@ -1,0 +1,92 @@
+﻿class_string,class_code,family_string,family_code
+methylation class embryonal tumor with multilayered rosettes,ETMR,,
+"methylation class medulloblastoma, WNT","MB, WNT",,
+methylation class diffuse midline glioma H3 K27M mutant,"DMG, K27",,
+methylation class central neurocytoma,CN,,
+methylation class diffuse leptomeningeal glioneuronal tumor,DLGNT,,
+methylation class cerebellar liponeurocytoma,LIPN,,
+"methylation class low grade glioma, desmoplastic infantile astrocytoma / ganglioglioma","LGG, DIG/DIA",,
+"methylation class low grade glioma, dysembryoplastic neuroepithelial tumor","LGG, DNT",,
+"methylation class low grade glioma, rosette forming glioneuronal tumor","LGG, RGNT",,
+methylation class retinoblastoma,RETB,,
+methylation class schwannoma,SCHW,,
+methylation class melanotic schwannoma,"SCHW, MEL",,
+"methylation class craniopharyngioma, adamantinomatous","CPH, ADM",,
+"methylation class craniopharyngioma, papillary","CPH, PAP",,
+"methylation class pituitary adenoma, ACTH","PITAD, ACTH",,
+"methylation class pituitary adenoma, FSH/LH","PITAD, FSH LH",,
+"methylation class pituitary adenoma, prolactin","PITAD, PRL",,
+"methylation class pituitary adenoma, STH sparsely granulated","PITAD, STH SPA",,
+"methylation class pituitary adenoma, TSH","PITAD, TSH",,
+"methylation class ependymoma, RELA fusion","EPN, RELA",,
+methylation class chordoid glioma of the third ventricle,CHGL,,
+"methylation class low grade glioma, subependymal giant cell astrocytoma","LGG, SEGA",,
+methylation class chordoma,CHORDM,,
+methylation class Ewing sarcoma,EWS,,
+methylation class hemangioblastoma,HMB,,
+methylation class melanoma,MELAN,,
+methylation class melanocytoma,MELCYT,,
+methylation class lymphoma,LYMPHO,,
+methylation class plasmacytoma,PLASMA,,
+"methylation class medulloblastoma, subclass group 3","MB, G3",methylation class family medulloblastoma group 3 and 4,MCF MB G3G4
+"methylation class medulloblastoma, subclass group 4","MB, G4",methylation class family medulloblastoma group 3 and 4,MCF MB G3G4
+"methylation class medulloblastoma, subclass SHH A (children and adult)","MB, SHH CHL AD","methylation class family medulloblastoma, SHH",MCF MB SHH 
+"methylation class medulloblastoma, subclass SHH B (infant)","MB, SHH INF","methylation class family medulloblastoma, SHH",MCF MB SHH 
+"methylation class atypical teratoid/rhabdoid tumor, subclass MYC","ATRT, MYC",methylation class family atypical teratoid/rhabdoid tumor,MCF ATRT
+"methylation class atypical teratoid/rhabdoid tumor, subclass SHH","ATRT, SHH",methylation class family atypical teratoid/rhabdoid tumor,MCF ATRT
+"methylation class atypical teratoid/rhabdoid tumor, subclass TYR","ATRT, TYR",methylation class family atypical teratoid/rhabdoid tumor,MCF ATRT
+"methylation class glioblastoma, IDH wildtype, H3.3 G34 mutant","GBM, G34", , 
+"methylation class glioblastoma, IDH wildtype, subclass mesenchymal","GBM, MES","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class glioblastoma, IDH wildtype, subclass midline ","GBM, MID","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class glioblastoma, IDH wildtype, subclass MYCN","GBM, MYCN","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class glioblastoma, IDH wildtype, subclass RTK I","GBM, RTK I","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class glioblastoma, IDH wildtype, subclass RTK II","GBM, RTK II","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class glioblastoma, IDH wildtype, subclass RTK III","GBM, RTK III","methylation class family glioblastoma, IDH wildtype",MCF GBM 
+"methylation class esthesioneuroblastoma, subclass A","ENB, A",methylation class family esthesioneuroblastoma,MCF ENB
+"methylation class esthesioneuroblastoma, subclass B","ENB, B",methylation class family esthesioneuroblastoma,MCF ENB
+"methylation class paraganglioma, spinal non-CIMP","PGG, nC", , 
+"methylation class pituitary adenoma, STH densely granulated, group A","PITAD, STH DNS A", , 
+"methylation class pituitary adenoma, STH densely granulated, group B","PITAD, STH DNS B", , 
+"methylation class low grade glioma, subclass posterior fossa pilocytic astrocytoma","LGG, PA PF",methylation class family pilocytic astrocytoma,MCF PA
+"methylation class low grade glioma, subclass midline pilocytic astrocytoma","LGG, PA MID",methylation class family pilocytic astrocytoma,MCF PA
+methylation class papillary tumor of the pineal region group A,"PTPR, A", , 
+methylation class papillary tumor of the pineal region group B,"PTPR, B", , 
+methylation class pineoblastoma group B,"PIN T,  PB B", , 
+"methylation class ependymoma, posterior fossa group A","EPN, PF A", , 
+"methylation class ependymoma, posterior fossa group B","EPN, PF B", , 
+"methylation class ependymoma, spinal","EPN, SPINE", , 
+"methylation class ependymoma, YAP fusion","EPN, YAP", , 
+methylation class CNS neuroblastoma with FOXR2 activation,"CNS NB, FOXR2", , 
+methylation class solitary fibrous tumor / hemangiopericytoma,SFT HMPC, , 
+"methylation class plexus tumor, subclass adult","PLEX, AD",methylation class family plexus tumor,MCF PLEX T
+"methylation class plexus tumor, subclass paediatric A","PLEX, PED A ",methylation class family plexus tumor,MCF PLEX T
+"methylation class plexus tumor, subclass paediatric B","PLEX, PED B",methylation class family plexus tumor,MCF PLEX T
+"methylation class IDH glioma, subclass astrocytoma",A IDH,"methylation class family glioma, IDH mutant",MCF IDH GLM
+"methylation class IDH glioma, subclass high grade astrocytoma ","A IDH, HG","methylation class family glioma, IDH mutant",MCF IDH GLM
+"methylation class IDH glioma, subclass 1p/19q codeleted oligodendroglioma",O IDH,"methylation class family glioma, IDH mutant",MCF IDH GLM
+methylation class pineal parenchymal tumor ,"PIN T, PPT", , 
+"methylation class low grade glioma, ganglioglioma","LGG, GG", , 
+methylation class pituicytoma / granular cell tumor / spindle cell oncocytoma,"PITUI, SCO, GCT", , 
+"methylation class low grade glioma, subclass hemispheric pilocytic astrocytoma and ganglioglioma","LGG, PA/GG ST",methylation class family pilocytic astrocytoma,MCF PA
+methylation class (anaplastic) pleomorphic xanthoastrocytoma,PXA, , 
+methylation class meningioma,MNG, , 
+"methylation class ependymoma, myxopapillary","EPN, MPE", , 
+"methylation class subependymoma, posterior fossa","SUBEPN, PF", , 
+"methylation class subependymoma, spinal","SUBEPN, SPINE", , 
+"methylation class subependymoma, supratentorial","SUBEPN, ST", , 
+methylation class pineoblastoma group A / intracranial retinoblastoma,"PIN T,  PB A", , 
+"methylation class low grade glioma, MYB/MYBL1","LGG, MYB", , 
+methylation class CNS high grade neuroepithelial tumor with BCOR alteration,"HGNET, BCOR", , 
+methylation class anaplastic pilocytic astrocytoma,ANA PA, , 
+methylation class CNS high grade neuroepithelial tumor with MN1 alteration,"HGNET, MN1", , 
+methylation class infantile hemispheric glioma,IHG, , 
+methylation class CNS Ewing sarcoma family tumor with CIC alteration,"EFT, CIC", , 
+"methylation class control tissue, pituitary gland anterior lobe","CONTR, ADENOPIT", , 
+"methylation class control tissue, cerebellar hemisphere","CONTR, CEBM", , 
+"methylation class control tissue, hemispheric cortex","CONTR, HEMI", , 
+"methylation class control tissue, hypothalamus","CONTR, HYPTHAL", , 
+"methylation class control tissue, inflammatory tumor microenvironment","CONTR, INFLAM", , 
+"methylation class control tissue, pineal gland","CONTR, PINEAL", , 
+"methylation class control tissue, pons","CONTR, PONS", , 
+"methylation class control tissue, reactive tumor microenvironment ","CONTR, REACT", , 
+"methylation class control tissue, white matter","CONTR, WM", , 
