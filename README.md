@@ -1,5 +1,17 @@
 # igm-cgg-mci
-A short description about the project.
+Tool for aggregating case data for the Molecular Characterization Initiative into a single summary file.
+
+Reads JSONs in a target folder or folders, identifies valid MCI clinical reports and COG case data files, and outputs a combined Excel sheet or JSON file.
+
+## Usage
+
+Commandline:
+Parameter	Description	Required/Optional	Default
+--input-json-dirs	Comma-separated list of directories from which to gather JSON files.	Required	-
+--output-prefix	Prefix for writing output file(s), including output directory.	Required	-
+--data-dict-reference	Tab-separated data dictionary template file.	Optional	Internal file
+--blank-field-indicator	Character to indicate fields which were included in data but left blank.	Optional	"." (pass "" to leave empty)
+--output-type	Type of output file to produce (Options: Excel, JSON, both).	Optional	Excel
 
 ## Getting Started
 
@@ -22,6 +34,9 @@ $ First step
 $ Another step
 $ Final step
 ```
+
+Available Dockerhub at https://hub.docker.com/r/nationwidechildrens/mci-data-aggregator, 
+and on Seven Bridges platform as "MCI Data Aggregator Tool" app.
 
 ## Usage
 
