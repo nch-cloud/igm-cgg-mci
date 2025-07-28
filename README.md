@@ -6,12 +6,13 @@ Reads JSONs in a target folder or folders, identifies valid MCI clinical reports
 ## Usage
 
 Commandline:
-Parameter	Description	Required/Optional	Default
---input-json-dirs	Comma-separated list of directories from which to gather JSON files.	Required	-
---output-prefix	Prefix for writing output file(s), including output directory.	Required	-
---data-dict-reference	Tab-separated data dictionary template file.	Optional	Internal file
---blank-field-indicator	Character to indicate fields which were included in data but left blank.	Optional	"." (pass "" to leave empty)
---output-type	Type of output file to produce (Options: Excel, JSON, both).	Optional	Excel
+| Parameter	| Description	| Required/Optional	| Default |
+| - | - | - | - |
+| --input-json-dirs	| Comma-separated list of directories from which to gather JSON files. | Required	| N/A |
+| --output-prefix	| Prefix for writing output file(s), including output directory.	| Required	| N/A |
+| --data-dict-reference	 | Tab-separated data dictionary template file.	| Optional |	Internal file |
+| --blank-field-indicator	 |Character to indicate fields which were included in data but left blank.	| Optional	| "." (pass "" to leave empty) |
+| --output-type	 | Type of output file to produce (Options: Excel, JSON, both). |	Optional |	Excel |
 
 ## Getting Started
 
